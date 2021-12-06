@@ -28,7 +28,6 @@ public class Employee {
 	private String verificationToken;
 	private boolean enabled;
 
-	
 	private String phnoeNumber;
 
 	private String gender;
@@ -47,15 +46,11 @@ public class Employee {
 	private String managerEmail;
 	private int experience;
 	private String qualication;
-	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private Long bankAccountNo;
-	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private String ifscCode;
-	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private String bankName;
-	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private String branchName;
-	
+
 	private String pan;
 	private Long empSalary;
 	private String empBloodGroup;
@@ -257,7 +252,7 @@ public class Employee {
 	public void setBranchName(String branchName) {
 		this.branchName = branchName;
 	}
-	
+
 	public String getPan() {
 		return pan;
 	}
@@ -384,5 +379,5 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-	
+
 }
